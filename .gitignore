@@ -30,7 +30,7 @@ node_modules
 npm-debug.log
 
 #node modules
-node_modules/
+node_modules/*
 
 # Custom Videos
-public/videos/
+public/videos/*
