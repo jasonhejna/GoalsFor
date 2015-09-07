@@ -1,18 +1,105 @@
+body{
+    padding-top: 0px;
+    background-color: #262626;
+}
+.container{
+    background-color: #ffffff;
+}
+
+.masthead{
+    margin-top:-20px;
+    font-family: 'Special Elite', cursive;
+}
+
+/*logo*/
 .title-logo{
-    color: #00B7FF;
+    color: #222222;
     text-align: center;
     font-family: 'Special Elite', cursive;
     font-size: 56px;
+    padding-top: 20px;
 }
+logo-anim{
+
+}
+
+/*nav*/
 .nav{
     font-family: 'Special Elite', cursive;
+    width: 88%;
+    max-width: 691px;
+    margin-left: auto;
+    margin-right: auto;
 }
+.nav-justified > li > a{
+    color:#222222;
+}
+
+/*message*/
+.message{
+    height: 190px;
+    margin-top: 36px;
+    padding: 10px;
+}
+
+/*jumbotron*/
 .jumbotron h1{
     font-size: 51px;
+    color: #99995F;
 }
-.gfont1{
-    font-family: 'Courgette', cursive;
+.jumbotron p{
+    color: #99995F;
 }
-.gfont2{
-    font-family: 'Special Elite', cursive;
+
+/*play field*/
+.play-field{
+    display: inline-block;
+
 }
+.play-field goal1{
+    display: block;
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+.play-field goal2{
+    display: block;
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+.play-field otheroptions{
+    display: block;
+    float: left;
+    width: 107px;
+    height: 200px;
+}
+.play-field tie{
+    float: left;
+    width: 107px;
+    height: 100px;
+}
+.play-field skip{
+    padding-top: 3px;
+    float: left;
+    width: 107px;
+    height: 100px;
+}
+.play-field .btn-success{
+    position: relative;
+    width: 250px;
+    height:200px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.play-field .btn-info{
+    position: relative;
+    width: 94px;
+    height:97px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/*reference*/
+/*font-family: 'Courgette', cursive;*/
+/*font-family: 'Special Elite', cursive;*/
