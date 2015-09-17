@@ -4,32 +4,48 @@ body{
 }
 .container{
     background-color: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .masthead{
-    margin-top:-20px;
     font-family: 'Special Elite', cursive;
+    height: 404px;
+    margin-top: -20px;
+    overflow-x: hidden;
 }
 
 /*logo*/
 .title-logo{
-    color: #222222;
+    position: relative;
+    z-index: 2;
+    padding-top: 122px;
     text-align: center;
     font-family: 'Special Elite', cursive;
+    color: #ffffff;
     font-size: 56px;
-    padding-top: 20px;
 }
 logo-anim{
 
 }
 
-/*nav*/
-.nav{
-    font-family: 'Special Elite', cursive;
-    width: 88%;
-    max-width: 691px;
+.customvideojs{
+    top: -193px;
+    z-index: 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*nav*/
+nav{
+    position: relative;
+    font-family: 'Special Elite', cursive;
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -197px;
+    z-index: 1;
 }
 .nav-justified > li > a{
     color:#222222;
@@ -38,23 +54,23 @@ logo-anim{
 /*message*/
 .message{
     height: 190px;
-    margin-top: 36px;
+    margin-top: 91px;
     padding: 10px;
 }
 
 /*jumbotron*/
 .jumbotron h1{
     font-size: 51px;
-    color: #99995F;
+    color: #e0e0e0;
 }
 .jumbotron p{
-    color: #99995F;
+    color: #e0e0e0;
 }
 
 /*play field*/
 .play-field{
     display: inline-block;
-
+    background-color: #fafafa;
 }
 .play-field goal1{
     display: block;
@@ -98,6 +114,20 @@ logo-anim{
     height:97px;
     word-wrap: break-word;
     white-space: normal;
+}
+
+/*Rankings*/
+.table-striped th{
+    text-align: center;
+}
+
+/*footer*/
+.row{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.footer p{
+    text-align: center;
 }
 
 /*reference*/

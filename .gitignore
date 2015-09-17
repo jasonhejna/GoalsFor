@@ -29,11 +29,8 @@ node_modules
 # Debug log from npm
 npm-debug.log
 
-#node modules
-node_modules/*
-
 # Custom Videos
-public/videos/*
+public/videos/
 
 #.idea file from webStorm
 .idea
