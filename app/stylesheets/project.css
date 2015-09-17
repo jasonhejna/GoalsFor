@@ -1,0 +1,135 @@
+body{
+    padding-top: 0px;
+    background-color: #262626;
+}
+.container{
+    background-color: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.masthead{
+    font-family: 'Special Elite', cursive;
+    height: 404px;
+    margin-top: -20px;
+    overflow-x: hidden;
+}
+
+/*logo*/
+.title-logo{
+    position: relative;
+    z-index: 2;
+    padding-top: 122px;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    color: #ffffff;
+    font-size: 56px;
+}
+logo-anim{
+
+}
+
+.customvideojs{
+    top: -193px;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*nav*/
+nav{
+    position: relative;
+    font-family: 'Special Elite', cursive;
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -197px;
+    z-index: 1;
+}
+.nav-justified > li > a{
+    color:#222222;
+}
+
+/*message*/
+.message{
+    height: 190px;
+    margin-top: 91px;
+    padding: 10px;
+}
+
+/*jumbotron*/
+.jumbotron h1{
+    font-size: 51px;
+    color: #e0e0e0;
+}
+.jumbotron p{
+    color: #e0e0e0;
+}
+
+/*play field*/
+.play-field{
+    display: inline-block;
+    background-color: #fafafa;
+}
+.play-field goal1{
+    display: block;
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+.play-field goal2{
+    display: block;
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+.play-field otheroptions{
+    display: block;
+    float: left;
+    width: 107px;
+    height: 200px;
+}
+.play-field tie{
+    float: left;
+    width: 107px;
+    height: 100px;
+}
+.play-field skip{
+    padding-top: 3px;
+    float: left;
+    width: 107px;
+    height: 100px;
+}
+.play-field .btn-success{
+    position: relative;
+    width: 250px;
+    height:200px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.play-field .btn-info{
+    position: relative;
+    width: 94px;
+    height:97px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/*Rankings*/
+.table-striped th{
+    text-align: center;
+}
+
+/*footer*/
+.row{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.footer p{
+    text-align: center;
+}
+
+/*reference*/
+/*font-family: 'Courgette', cursive;*/
+/*font-family: 'Special Elite', cursive;*/
