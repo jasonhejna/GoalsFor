@@ -30,7 +30,7 @@ node_modules
 npm-debug.log
 
 # Custom Videos
-public/videos/
+app/bootstrap/videos
 
 #.idea file from webStorm
 .idea
