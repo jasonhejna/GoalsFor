@@ -1,0 +1,145 @@
+html{
+    position: fixed;
+    top: 0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+body{
+    background-color: #2B0D63;
+    height: 100%;
+    width: 100%;
+}
+
+logo{
+    font-size: 55px;
+    color: #FFF;
+    font-family: inherit;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 1;
+    text-shadow: 0 1px 0 rgba(0,0,0,1);
+    margin-left: 47px;
+}
+
+
+nav{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 34px;
+    color: #FFF;
+}
+nav left{
+    float: left;
+    width: 150px;
+    height: 56px;
+    font-size: 30px;
+    padding-top: 3px;
+}
+nav right{
+    float: right;
+    width: 260px;
+    height: 16px;
+    position: relative;
+    top: 17px;
+}
+
+.main-view{
+}
+
+.bs-docs-header, .bs-docs-masthead{
+    margin-top: 20px;
+    height: 218px;
+    padding: 30px 0;
+    color: #cdbfe3;
+    text-shadow: 0 1px 0 rgba(0,0,0,1);
+    background:rgba(111,84,153,0.5);
+    z-index: 1;
+}
+.bs-docs-header h1{
+    font-size: 60px;
+    color: #fff;
+    line-height: 1;
+}
+.bs-docs-header p{
+    font-size: 28px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 1.4;
+}
+/*play field*/
+
+.image-body{
+    position: absolute;
+    left:0px;
+    top:20px;
+    background-image: url("http://localhost:3000/assets/earth_night.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+@media (min-width: 1440px){
+}
+/*play field*/
+@media (min-width: 992px){
+
+}
+.play-field{
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    display: block;
+    width: 870px;
+    height: 230px;
+}
+.play-field goal1{
+    display: block;
+    float: left;
+    width: 361px;
+    height: 240px;
+}
+.play-field goal2{
+    display: block;
+    float: left;
+    width: 361px;
+    height: 240px;
+}
+.play-field otheroptions{
+    display: block;
+    float: left;
+    width: 129px;
+    height: 115px;
+}
+.play-field tie{
+    float: left;
+    margin-left: 17px;
+    margin-top: 1px;
+    width: 112px;
+    height: 115px;
+}
+.play-field skip{
+    padding-top: 3px;
+    float: left;
+    margin-left: 17px;
+    width: 200px;
+    height: 140px;
+}
+.play-field .btn-success{
+    position: relative;
+    width: 360px;
+    height:220px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.play-field .btn-info{
+    position: relative;
+    width: 94px;
+    height:100px;
+    word-wrap: break-word;
+    white-space: normal;
+}
