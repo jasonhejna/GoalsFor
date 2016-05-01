@@ -34,3 +34,6 @@ app/bootstrap/videos
 
 #.idea file from webStorm
 .idea
+
+# node log
+npm-depug.log
