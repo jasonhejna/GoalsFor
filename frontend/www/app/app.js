@@ -11,7 +11,7 @@ define(['angularAMD', 'angularUiRouter'], function (angularAMD) {
         {
             $stateProvider
 
-                // home
+                // menu_ctrl
                 .state(
                 'base', angularAMD.route({
                     abstract: true,
@@ -26,10 +26,10 @@ define(['angularAMD', 'angularUiRouter'], function (angularAMD) {
                 })
             )
 
-                // home
+                // home, aka the _ page
                 .state(
-                'base.home', angularAMD.route({
-                    url: '/home',
+                'base._', angularAMD.route({
+                    url: '/_',
                     views:
                     {
 
@@ -44,16 +44,9 @@ define(['angularAMD', 'angularUiRouter'], function (angularAMD) {
             )
 
 
-                // profile
-                .state(
-                'foo', angularAMD.route({
-                    url: '/foo',
-                    templateUrl: '',
-                    controllerUrl: ''
-                })
-            );
 
-            $urlRouterProvider.otherwise('home');
+
+            $urlRouterProvider.otherwise('_');
         }
     ]);
 
