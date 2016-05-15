@@ -9,24 +9,25 @@ router.get('/', function(req, res, next) {
     res.send('Connection Established');
 });
 
-
-
 router.get('/tempAuth', function(req, res, next){
-    async.waterfall([
-        function(callback){
+    // make a new session for an un-authed user
+    // accepts query string: "location" = ObjectId in the places collection
+    // returns: "expires" = unix time stamp, "session" = random string, "id" = ObjectId in the tempAuth collection, "goals" = array of goals
 
+    async.waterfall([
+        // TODO: ip blacklist
+        function(callback){
             var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
             var session = randomstring.generate(256);
             var expires = Date.now() + 259200000;
-
-            var location = req.query.location;
 
             var db = req.app.get('db');
             db.collection('tempAuth').insertOne(
                 {
                     "session": session,
                     "expires": expires,
-                    "ip": ip
+                    "ip": ip,
+                    "goals": []
                 },
                 function(err, result) {
                     if (err) throw err;
@@ -35,24 +36,11 @@ router.get('/tempAuth', function(req, res, next){
                 }
             );
 
-        },
-        function(expires, session, dbid, callback){
-            var db = req.app.get('db');
-            db.collection('places').find({ "_id": ObjectId("570716f68e6b2a220a0528ea") }).toArray(function(err, result) {
-                if (err) throw err;
-
-                callback(null, expires, session, dbid, result[0].goals);
-            });
-
-        },
-        function(expires, session, dbid, goals, callback){
-
-            callback(null, expires, session, dbid, goals);
         }
-    ], function (err, expires, session, dbid, goals) {
+    ], function (err, expires, session, id) {
         if (err) throw err;
 
-        res.send({"expires": expires, "session": session, "id": dbid, "goals": goals});
+        res.send({"expires": expires, "session": session, "id": id});
     });
 });
 

@@ -3,6 +3,7 @@ var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var config = require('./config');
 
 var baseRoute = require('./routes/base');
 var auth = require('./routes/auth');
@@ -15,7 +16,7 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient;
 var db;
 // Initialize connection once
-MongoClient.connect("mongodb://localhost:27017/goalsfor", {
+MongoClient.connect(config.mogoUrl, {
   ssl: false,
   maxPoolSize: 5,
   waitQueueTimeoutMS: 500

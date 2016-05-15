@@ -1,4 +1,4 @@
-define(['angularAMD', 'angularUiRouter'], function (angularAMD) {
+define(['angularAMD', 'angularUiRouter', '../app/auth'], function (angularAMD) {
 
     // the app
     var app = angular.module('dsc', ['ui.router']);
